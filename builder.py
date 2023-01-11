@@ -1,6 +1,8 @@
 from typing import Optional
 
-from functions import filter_query, unique_query, limit_query, map_query, sort_query
+from functions import filter_query, unique_query, limit_query, map_query, sort_query, regex_query
+
+FILE_NAME = 'data/apache_logs.txt'
 
 CMD_TO_FUNCTIONS = {
     'filter': filter_query,
@@ -8,6 +10,7 @@ CMD_TO_FUNCTIONS = {
     'limit': limit_query,
     'map': map_query,
     'sort': sort_query,
+    'regex': regex_query,
 }
 
 
